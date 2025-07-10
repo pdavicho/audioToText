@@ -921,6 +921,17 @@ def display_results():
 if __name__ == "__main__":
     st.title('🎙️ Transcripción de Audio a Texto')
     st.markdown("---")
+
+    # Sidebar con información
+    with st.sidebar:
+        st.header("ℹ️ Información del Sistema")
+        st.write("**🎯 Características principales:**")
+        st.write("• Procesamiento máximo de 4 minutos por audio")
+        st.write("• Búsqueda de palabras clave")
+        st.write("• Marcas de tiempo")
+        st.write("• Reportes PDF")
+        st.write("")
+        st.write("")
     
     # Mostrar resultados persistentes si existen
     if st.session_state.transcription_complete and st.session_state.transcription_text:
